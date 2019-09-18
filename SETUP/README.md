@@ -67,3 +67,29 @@ P.S: Cerramos Visual Studio code por que no hiciste caso cuando te dije que le q
 ![alt text](https://github.com/DigitalSnakedotexe/POO/blob/master/SETUP/Imagenes/Visual/Terminamos%20code.png)
 
 
+
+-------------------------------IMPORTANTE----------------------------
+
+
+Si cuentas con algun cliente de Gaming, es muy probable que ya tengas el DOTNET debido a que estos te descargan una vercion de SDK para Debugging de algunos juegos, es por eso que antes de seguir el siguiente turial primero revises en el area de Programas instalados de tu PC si cuentas con el Microsoft.NET SDK.
+
+El path para la lista de programas suele ser este:
+Control Panel\All Control Panel Items\Programs and Features
+
+Si no lo tienes o no te molesta tener duplicados del mismo programa en diferentes verciones podemos continuar...
+
+
+De Igual Manera buscamos "DOTNET" 
+![alt text](https://github.com/DigitalSnakedotexe/POO/blob/master/SETUP/Imagenes/Dotnet/Buscamos%20Dotnet%20core%20en%20google.png)
+
+Y de igual manera escojemos la primera opcion que nos aroja el buscador.
+![alt text](https://github.com/DigitalSnakedotexe/POO/blob/master/SETUP/Imagenes/Dotnet/Escojemos%20el%20Primer%20resultado.png)
+
+Aqui es importante que escojamos descargar la opcion que a continuacion se señala con la flecha roja.
+![alt text](https://github.com/DigitalSnakedotexe/POO/blob/master/SETUP/Imagenes/Dotnet/Escojemos%20esta%20vercion%20de%20dotnet.png)
+
+Como ya habia comentado mis descargas se ban directamente al escritorio pero en algunos casos puede que el archivo se encuentre en Downloads (Descargas) que en algunos casos esta en el siguiente path C:\Users\[TU NOMBRE DE USUARIO EN LA PC]\Downloads
+![alt text](https://github.com/DigitalSnakedotexe/POO/blob/master/SETUP/Imagenes/Dotnet/Escojemos%20el%20Lugar%20de%20descarga%20para%20dotnet.png)
+
+Ya una vez localizado le damos doble click para executarlo y terminar con la ionstalacion, este a diferencia de visual, se instala ya mas directo  solo es esperar a que termine la instalacion.
+![alt text](https://github.com/DigitalSnakedotexe/POO/blob/master/SETUP/Imagenes/Dotnet/Le%20damos%20a%20instalar%20y%20se%20instala.png)
