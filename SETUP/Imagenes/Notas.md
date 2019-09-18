@@ -16,7 +16,7 @@ y le damos a "Next"
 -En la siguiente ventana ya nos pide que espesifiquemos la donde se instalara el programa, aqui no aremos ningun cambio y le daremos a siguiente al igual como en la siguiente ventana
 ya que solo nos pide si queremos cambiar la lozalizacion del folder en el INICIO 
 
--Aqui si es MUY importante que seleccionen las dos casillas señaladas por la flecha roja ya que son formas en como se abriran los folders ya mas adelante.
+-Aqui si es MUY importante que seleccionen las dos casillas seÃ±aladas por la flecha roja ya que son formas en como se abriran los folders ya mas adelante.
 
 - Ya en esta ventana lo unico que queda es darle a "Install"
 
