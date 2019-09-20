@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CineP_V1
+namespace Pelicula
 {
     class Pelicula
     {
@@ -17,13 +17,18 @@ namespace CineP_V1
     {
         static void Main(string[] args)
         {
-            Pelicula P1 = new Pelicula();
-            P1.titulo = "La La Land";
-            P1.año = 2016;
+            Pelicula p1 = new Pelicula();
+            p1.titulo ("La La Land");
+            p1.año (2016);
 
-            
-            Console.WriteLine("{0}{1}",P1.titulo, P1.año);
-            Console.ReadLine();
+            Pelicula p2 = new Pelicula ();
+            p2.Titulo ("Guerra de las Galacias")
+            p2.año (1978)
+
+
+
+            console.WriteLine("{0} {1}", p1.titulo, p1.año);
+            console.WriteLine("{0} {1}", p2.titulo, p2.año);
         }
     }
 }
