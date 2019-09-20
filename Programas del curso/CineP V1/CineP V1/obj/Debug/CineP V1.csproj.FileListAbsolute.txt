@@ -1,7 +1,0 @@
-C:\Users\Syaoran\Desktop\CineP V1\CineP V1\bin\Debug\CineP V1.exe.config
-C:\Users\Syaoran\Desktop\CineP V1\CineP V1\bin\Debug\CineP V1.exe
-C:\Users\Syaoran\Desktop\CineP V1\CineP V1\bin\Debug\CineP V1.pdb
-C:\Users\Syaoran\Desktop\CineP V1\CineP V1\obj\Debug\CineP V1.csprojAssemblyReference.cache
-C:\Users\Syaoran\Desktop\CineP V1\CineP V1\obj\Debug\CineP V1.csproj.CoreCompileInputs.cache
-C:\Users\Syaoran\Desktop\CineP V1\CineP V1\obj\Debug\CineP V1.exe
-C:\Users\Syaoran\Desktop\CineP V1\CineP V1\obj\Debug\CineP V1.pdb
