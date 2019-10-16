@@ -1,0 +1,94 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace MusicoV2
+{
+    class Musico
+    {
+        protected string nombre;
+        public Musico (string n)
+        {
+            nombre = n;
+        }
+
+        public virtual void Afina()
+        {
+            Console.WriteLine("{0} afinando su instrumento", nombre);
+        }
+
+        public virtual string Saluda()
+        {
+            return string.Format("Hola soy {0}", nombre);
+        }        
+    }
+
+    class Bajista : Musico
+    {
+        private string bajo;
+        public Bajista(string no, string b) : base(no)
+        {
+            bajo = b;
+        }
+
+        public override void Afina()
+        {
+            Console.WriteLine("{0} afinando su {1}", nombre, bajo);
+        }
+
+        public override string Saluda()
+        {
+            return base.Saluda() + "y soy bajista ";
+        }
+    }
+
+    class Guitarrista : Musico
+    {
+        private string guitarra;
+        public Guitarrista(string no, string g) : base(no)
+        {
+            guitarra = g;
+        }
+
+        public override void Afina()
+        {
+            Console.WriteLine("{0} afinando su {1}", nombre, guitarra);
+        }
+
+        public override string Saluda()
+        {
+            return base.Saluda() + "y soy guitarrista ";
+        }
+    }
+
+
+
+
+
+
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Musico tom = new Musico("Tom");
+            Bajista flea = new Bajista("Flea", "Musicman");
+            Guitarrista jimmy = new Guitarrista("Jimmy H.", "Fennder");
+
+            List<Musico> grupo = new List<Musico>();
+            grupo.Add(tom);
+            grupo.Add(flea);
+            grupo.Add(jimmy);
+
+            foreach(Musico m in grupo)
+            {
+                Console.WriteLine(m.Saluda());
+                m.Afina();
+            }
+
+            Console.ReadLine();
+        }
+    }
+}
