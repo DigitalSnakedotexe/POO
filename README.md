@@ -1,6 +1,6 @@
-![alt text](https://github.com/DigitalSnakedotexe/POO/blob/master/Logos/Logotipo-ITT-2015.png "Logo ITT")
+![alt text](https://github.com/DigitalSnakedotexe/POO/blob/master/Logos/logo_ITT1.png "Logo ITT")
 
-![alt text](https://raw.githubusercontent.com/DigitalSnakedotexe/POO/master/Logos/LOGO%20de%20Ingenieria%20en%20Sistemas%20Computacionales%20ISC.png "Logo Carrera")
+![alt text](https://github.com/DigitalSnakedotexe/POO/blob/master/Logos/download.png "Logo Carrera")
 # POO
 Repositorio de la materia POO
 
