@@ -1,5 +1,4 @@
 ![alt text](https://github.com/DigitalSnakedotexe/POO/blob/master/Logos/logo_ITT1.png "Logo ITT")
-
 ![alt text](https://github.com/DigitalSnakedotexe/POO/blob/master/Logos/download.png "Logo Carrera")
 # POO
 Repositorio de la materia POO
