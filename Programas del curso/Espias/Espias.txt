@@ -1,0 +1,92 @@
+using System;
+
+
+//pase de parametros
+namespace Espias
+{
+
+    class Persona
+    {
+        public string Nombre;
+        public string apellido;
+
+        public Persona()
+        {
+            Nombre = "fulano";
+            apellido = "De tal";
+        }
+    }
+
+    class Duplicador
+    {
+        public void duplica (int x)
+        {
+            x = x * 2;
+            //x *= 2;
+        }
+    }
+
+    class Anonymous
+    {
+        public static void anonimiza (Persona p)
+        {
+            p.Nombre = "xxxxxxx";
+            p.apellido = "xxxxxxx";
+        }
+
+        public static void cambia (ref Persona p)
+        {
+            p = new Persona();
+            p.Nombre = "new";
+
+        }
+    }
+
+    class Program
+    {
+        static void duplica (ref int x)
+        {
+            x = x * 2;
+        }
+
+        static int suma (int x, int y)
+        {
+            return x + y;
+        }
+
+        static void Main(string[] args)
+        {
+            int a = 2;
+            int b = 3;
+            int r = suma(a, b);
+
+            //dupolica(ref a);
+            Console.WriteLine(r);
+
+
+            //Persona p = new Persona();
+            //Console.WriteLine(p.Nombre);
+            //Anonymous.anonimiza(p);
+            //Anonymous.cambia(ref p);
+            //Console.WriteLine(p.Nombre);
+            
+
+
+
+
+            // Duplicador dup = new Duplicador();
+            //dup.duplica(2);
+
+            //int x = 2;
+
+            //dup.duplica(x);
+
+            //Console.WriteLine("X es {0}", x);
+
+
+
+            Console.ReadLine();
+
+        }
+    }
+}
