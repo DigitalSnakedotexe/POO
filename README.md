@@ -1,7 +1,6 @@
-[logo]:(https://github.com/DigitalSnakedotexe/POO/blob/master/Logos/Logotipo-ITT-2015.png)
+[logo]: https://github.com/DigitalSnakedotexe/POO/blob/master/Logos/Logotipo-ITT-2015.png "Logo ITT"
 
-
-[logo]:(https://raw.githubusercontent.com/DigitalSnakedotexe/POO/master/Logos/LOGO%20de%20Ingenieria%20en%20Sistemas%20Computacionales%20ISC.png)
+[logo]: https://raw.githubusercontent.com/DigitalSnakedotexe/POO/master/Logos/LOGO%20de%20Ingenieria%20en%20Sistemas%20Computacionales%20ISC.png "Logo Carrera"
 # POO
 Repositorio de la materia POO
 Nombre: Guiterrez Lozano Juan Pablo    
