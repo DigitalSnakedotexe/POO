@@ -18,4 +18,4 @@ Programas/Trabajos del Curso:
 - [Duracion v2](https://github.com/DigitalSnakedotexe/POO/blob/master/Programas%20del%20curso/Duracion/Duracion%20v2.txt)
 - [Musico](https://github.com/DigitalSnakedotexe/POO/blob/master/Programas%20del%20curso/Musico/Musico.txt)
 - [FaceClon](https://github.com/DigitalSnakedotexe/POO/tree/master/Programas%20del%20curso/FaceClon)
-- [Figura] PENDIENTE
+- [Figura] (https://github.com/DigitalSnakedotexe/POO/blob/master/Programas%20del%20curso/Figura/Figura.txt)
