@@ -1,0 +1,105 @@
+using System;
+using System.Collections.Generic;
+namespace Figura
+{
+    abstract class Figura
+    {
+        protected int x;
+        protected int y;
+        protected string color;
+
+        public Figura (int x, int y, string c)
+        {
+            this.x = x;
+            this.y = y;
+            color = c;
+        }
+
+        public virtual void Dibuja()
+        {
+            Console.WriteLine("Se dibuja una figura color {0}",color);
+        }
+
+        public void Printcolor()
+        {
+            Console.WriteLine(color);
+        }
+    }
+
+
+    class Circulo : Figura
+    {
+        public Circulo(int x, int y, string c) : base(x, y, c) { }
+
+        public override void Dibuja()
+        {
+            Console.WriteLine("se dibuja un circulo{0}",color);
+
+        }
+    }
+
+    class Rect : Figura
+    {
+        public Rect(int x, int y, string c) : base(x, y, c) { }
+
+        public override void Dibuja()
+        {
+            Console.WriteLine("Se dibuja un rectangulo {0}", color);
+        }
+    }
+
+    class Triangulo : Figura
+    {
+        public Triangulo(int x, int y, string c) : base(x, y, c) { }
+
+        public override void Dibuja()
+        {
+            Console.WriteLine("Se dibuja un triangulo {0}", color);
+        }
+    }
+    class Ovalo : Figura
+    {
+        public Ovalo(int x, int y, string c) : base(x, y, c) { }
+
+        public override void Dibuja()
+        {
+            Console.WriteLine("Se dibuja un ovalo {0}", color);
+        }
+    }
+    class Mancha : Figura
+    {
+        public Mancha(int x, int y, string c) : base(x, y, c) { }
+
+        public override void Dibuja()
+        {
+            Console.WriteLine("Se dibuja una mancha {0}", color);
+        }
+    }
+
+
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            List<Figura> figuras = new List<Figura>();
+
+            figuras.Add(new Circulo (12, 13,"Verde"));
+            figuras.Add(new Rect(12, 13, "Azul"));
+            figuras.Add(new Rect(12, 13, "Rojo"));
+            figuras.Add(new Circulo (12, 13,"Rojo"));
+            figuras.Add(new Triangulo(12, 13, "Chiaquil"));
+            figuras.Add(new Ovalo(12,13,"Magenta"));
+            figuras.Add(new Mancha(12,13,"Negra"));
+
+
+
+            foreach (var item in figuras)
+            {
+                item.Dibuja();
+            }
+
+            Console.ReadLine();
+        }
+    }
+}
