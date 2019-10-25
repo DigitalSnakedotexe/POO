@@ -1,0 +1,93 @@
+using System;
+using System.Collections.Generic;
+
+
+namespace Faceclon
+{
+    abstract class Publicacion
+    {
+
+        protected string Usuario;
+        protected string Fecha;
+        
+
+        public Publicacion(string u, string f)
+        {
+            this.Usuario = u;
+            this.Fecha = f;
+        }
+
+        public virtual void Publica()
+        {
+            Console.WriteLine("{0} {1}", Usuario, Fecha);
+        }    
+
+    }
+
+
+    class Estado : Publicacion
+    {
+        private string animo;
+        public Estado(string u, string f, string animo) : base(u, f)
+        {
+            this.animo = animo;
+        }
+
+        public override void Publica()
+        {
+            Console.WriteLine("El {0} el dia {1} tiene el siguiente estado -{2}-", Usuario, Fecha,animo);
+        }
+    }
+
+    class Foto : Publicacion
+    {
+        private string formato;
+
+        public Foto(string u, string f, string formato) : base(u,f)
+        {
+            this.formato = formato;
+        }
+
+        public override void Publica()
+        {
+            Console.WriteLine("El usuario {0} el dia {1} subio la foto {2}", Usuario, Fecha, formato);
+        }
+    }
+
+    class Link : Publicacion
+    {
+        private string link;
+
+        public Link(string u, string f, string link) : base(u,f)
+        {
+            this.link = link;
+        }
+
+        public override void Publica()
+        {
+            Console.WriteLine("{0} {1} compartio el siguiente link {2}",Usuario, Fecha,link);
+        }
+    }
+
+
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            List<Publicacion> personas = new List<Publicacion>();
+
+            personas.Add(new Estado("SORA ", "8/18/2019 ", "Realizado"));
+            personas.Add(new Foto("Miyuki", "8/18/2019", "viaje_Japon.png"));
+            personas.Add(new Link("Alfredo Alvarez", "8/24/2019","http://Alfredoalvarez.mx"));
+
+            
+            foreach (var item in personas)
+            {
+                item.Publica();
+            }
+
+            Console.ReadLine();
+        }
+    }
+}
