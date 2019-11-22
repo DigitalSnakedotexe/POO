@@ -19,3 +19,5 @@ Programas/Trabajos del Curso:
 - [Musico](https://github.com/DigitalSnakedotexe/POO/blob/master/Programas%20del%20curso/Musico/Musico.txt)
 - [FaceClon](https://github.com/DigitalSnakedotexe/POO/tree/master/Programas%20del%20curso/FaceClon)
 - [Figura](https://github.com/DigitalSnakedotexe/POO/blob/master/Programas%20del%20curso/Figura/Figura.txt)
+- [Stack](https://github.com/DigitalSnakedotexe/POO/blob/master/Programas%20del%20curso/Stack/Stack.txt)
+- [Cola](https://github.com/DigitalSnakedotexe/POO/blob/master/Programas%20del%20curso/Queue/Queue.txt)
