@@ -1,0 +1,79 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace StackProgram
+{
+    public class Stack<T>
+    {
+        readonly int m_Size;
+        int m_StackPointer = 0;
+        T[] m_Items;
+
+        public Stack() : this(100)
+        { }
+
+        public Stack(int size)
+        {
+
+            m_Size = size;
+            m_Items = new T[m_Size];
+        }
+
+        public void Push(T item)
+        {
+            if (m_StackPointer >= m_Size)
+                throw new StackOverflowException();
+            m_Items[m_StackPointer] = item;
+            m_StackPointer++;
+        }
+
+        public T Pop()
+        {
+            m_StackPointer--;
+
+            if (m_StackPointer >= 0)
+            {
+                return m_Items[m_StackPointer];
+            }
+            else
+            {
+                m_StackPointer = 0;
+                throw new InvalidOperationException("Cannot pop an empty stack");
+            }
+        }
+    }
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string p = "Next";
+
+            Stack st = new Stack();
+            st.Push(6);
+            st.Push(5);
+            st.Push(4);
+            st.Push(3);
+            st.Push(2);
+            st.Push(1);
+
+            Console.WriteLine("Total Number of elements on Stack: {0}", st.Count);
+
+            //Esto hace pop cada vez que introducimos un Next
+            do
+            {
+                Console.WriteLine(st.Pop());
+
+                p = Console.ReadLine();
+
+            } while (p == "Next");
+            
+
+            Console.ReadKey();
+        }
+    }
+}

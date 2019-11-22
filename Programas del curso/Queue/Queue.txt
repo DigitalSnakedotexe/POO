@@ -1,0 +1,35 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Queuepoo
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {            
+            Queue <string> cola = new Queue <string>();
+
+            cola.Enqueue("2");
+            cola.Enqueue("4");
+            cola.Enqueue("1");
+            cola.Enqueue("3");
+            cola.Enqueue("3");
+            cola.Enqueue("Hola");
+            cola.Enqueue("Mundo");
+
+            Console.WriteLine("Existen {0} elementos en la cola...", cola.Count);
+            Console.WriteLine("Estos son los elementos de la Cola: ");
+            foreach(string fila in cola)
+            {
+                Console.WriteLine(fila);
+            }
+
+            Console.ReadLine();
+
+        }
+    }
+}
