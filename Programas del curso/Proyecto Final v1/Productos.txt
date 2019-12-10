@@ -1,0 +1,145 @@
+using System;
+using System.IO;
+using System.Collections.Generic;
+
+namespace Productos
+{
+    class Producto
+    {
+        public string codigo, descripcion;
+        public double precio;
+        public int departamento, likes;
+
+        public Producto(string c, string d, double p, int de, int l)
+        {
+            codigo = c; descripcion = d; precio = p; departamento = de; likes = l;
+        }
+
+        public Producto() { }
+
+    }
+
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int info = 1;
+            int opcion = 0;
+
+            List<Producto> productos = new List<Producto>();
+
+            productos.Add(new Producto("AQW", "Lapiz Azul", 12.23, 2, 4));
+            productos.Add(new Producto("AQW", "Lapiz Azul", 12.23, 2, 4));
+            productos.Add(new Producto("AQW", "Lapiz Azul", 12.23, 2, 4));
+            productos.Add(new Producto("AQW", "Lapiz Azul", 12.23, 2, 4));
+
+
+            do
+            {
+                Console.WriteLine("Escoja alguna de las siguientes opciones:");
+                Console.WriteLine("1: Crear Archivo. \n2: Leer Archivo.");
+                opcion = int.Parse(Console.ReadLine());
+
+
+                switch (opcion)
+                {
+                    case 1:
+                        {
+                            
+                            FileStream fs = new FileStream(@"C:\Users\Syaoran\Desktop\productos.txt", FileMode.OpenOrCreate, FileAccess.Write);
+                            StreamWriter txtout = new StreamWriter(fs);
+
+                            foreach (Producto p in productos)
+                            {
+                                txtout.WriteLine("{0} {1} {2} {3} {4}", p.codigo, p.descripcion, p.precio, p.departamento, p.likes);
+                            }
+                            txtout.Close();
+
+                            Console.WriteLine("Archivo Guardado");
+                            break;
+
+
+                            
+                        }
+
+                    case 2:
+                        {
+                            string text = System.IO.File.ReadAllText(@"C:\Users\Syaoran\Desktop\productos.txt");
+                            System.Console.WriteLine("Contenido del archivo = {0}\n", text);
+                            Console.WriteLine("Presione cualquier tecla para salir.");
+                            System.Console.ReadKey();
+
+
+                            break;
+                        }
+
+                    case 3:
+                        {
+                            FileStream fs = new FileStream(@"productos.bin", FileMode.OpenOrCreate, FileAccess.Write);
+                            BinaryWriter binOut = new BinaryWriter(fs);
+                            foreach(Producto p in productos)
+                            {
+                                binOut.Write(p.codigo);
+                                binOut.Write(p.descripcion);
+                                binOut.Write(p.precio);
+                                binOut.Write(p.departamento);
+                                binOut.Write(p.likes);
+
+                            }
+
+                            binOut.Close();
+
+                            Console.WriteLine("El archivo a sido creado.");
+
+                            break;
+                        }
+
+                    case 4:
+                        {
+                            BinaryReader binln = new BinaryReader( new FileStream(@"productos.bin", FileMode.OpenOrCreate, FileAccess.Read));
+
+                            List<Producto> productost = new List<Producto>();
+                            while (binln.PeekChar() != -1)
+                            {
+                                Producto producto = new Producto();
+                                producto.codigo = binln.ReadString();
+                                producto.descripcion = binln.ReadString();
+                                producto.precio = binln.ReadDouble();
+                                producto.departamento = binln.ReadInt32();
+                                producto.likes = binln.ReadInt32();
+
+                                productost.Add(producto);
+
+                            }
+
+                            binln.Close();
+
+                            foreach (Producto p in productost)
+                            {
+                                Console.WriteLine(p.codigo);
+
+                            }
+
+
+                            break;
+                        }
+
+                            
+                        
+
+                        
+
+                }
+
+                Console.WriteLine("Desea ejecutar de nuevo Si= 1 , No = 2");
+                info = int.Parse(Console.ReadLine());
+
+            } while (info ==1);
+            
+
+            Console.ReadLine();
+
+        }
+    }
+}
