@@ -1,0 +1,30 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Exepciones
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            empezar:
+            try
+            {
+                int num;
+                Console.Write("\n Ingrese un numero : ");
+                num = int.Parse(Console.ReadLine());
+                Console.Write("Su numero es: {0} ", num);
+
+                Console.ReadKey();
+            }
+            catch (FormatException)
+            {
+                Console.Write("Debe ingresar un numero : \n");
+            }
+            goto empezar;
+        }
+    }
+}
