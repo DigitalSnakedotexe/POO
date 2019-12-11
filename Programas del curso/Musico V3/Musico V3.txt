@@ -1,0 +1,84 @@
+using System;
+using System.Collections.Generic;
+namespace MusicoV3
+{
+    abstract class Musico
+    {
+        public string nombre;
+
+        public Musico (string n)
+        {
+            this.nombre = n;  
+        }
+
+        public virtual void Afina()
+        {
+            Console.WriteLine("{0} afinando su instrumento", nombre);
+        }
+
+        public virtual void Saluda()
+        {
+            Console.WriteLine("Hola soy {0}", nombre);
+        }
+    }
+
+
+    class Bajista : Musico
+    {
+        private string bajo;
+        public Bajista(string no, string b) : base(no)
+        {
+            bajo = b;
+        }
+
+        public override void Afina()
+        {
+            Console.WriteLine("{0} afinando su {1}", nombre, bajo);
+        }
+
+        public override void Saluda()
+        {
+            Console.WriteLine( "y soy bajista ");
+        }
+    }
+
+    class Guitarrista : Musico
+    {
+        private string bajo;
+        public Guitarrista(string no, string b) : base(no)
+        {
+            bajo = b;
+        }
+
+        public override void Afina()
+        {
+            Console.WriteLine("{0} afinando su {1}", nombre, bajo);
+        }
+
+
+        public override void Saluda()
+        {
+            Console.WriteLine("y soy guitarrista ");
+        }
+        
+    }
+
+
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            List<Musico> musicos = new List<Musico>();
+
+            musicos.Add(new Bajista("Tom","Musicman"));
+            musicos.Add(new Guitarrista("Jimmy H.", "Fennder"));
+            foreach (var item in musicos)
+            {
+                item.Saluda();
+            }
+
+            Console.ReadLine();
+        }
+    }
+}
