@@ -17,6 +17,7 @@ Programas/Trabajos del Curso:
 - [Duracion](https://github.com/DigitalSnakedotexe/POO/blob/master/Programas%20del%20curso/Duracion/Duracion%20v1.txt)
 - [Duracion v2](https://github.com/DigitalSnakedotexe/POO/blob/master/Programas%20del%20curso/Duracion/Duracion%20v2.txt)
 - [Musico](https://github.com/DigitalSnakedotexe/POO/blob/master/Programas%20del%20curso/Musico/Musico.txt)
+- [Musico V3](https://github.com/DigitalSnakedotexe/POO/blob/master/Programas%20del%20curso/Musico%20V3/Musico%20V3.txt)
 - [FaceClon](https://github.com/DigitalSnakedotexe/POO/tree/master/Programas%20del%20curso/FaceClon)
 - [Figura](https://github.com/DigitalSnakedotexe/POO/blob/master/Programas%20del%20curso/Figura/Figura.txt)
 - [Stack](https://github.com/DigitalSnakedotexe/POO/blob/master/Programas%20del%20curso/Stack/Stack.txt)
